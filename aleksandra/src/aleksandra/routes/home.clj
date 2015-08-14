@@ -3,7 +3,7 @@
             [aleksandra.views.layout :as layout]))
 
 (defn home []
-  (layout/common [:h1 "Hello World!"]))
+  (layout/common [:h1 "Hello Anaa!"]))
 
 (defroutes home-routes
   (GET "/" [] (home)))
