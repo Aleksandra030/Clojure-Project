@@ -1,7 +1,7 @@
-(ns aleksandra.test.handler
+(ns aleksandra.test.core_test
   (:require [expectations :refer :all]
             [database.core :refer :all]
-            [datomic.api :as d]))
+            [datomic.api :as d])
   
 (defn create-empty-in-memory-db []
   (let [uri "datomic:mem://pet-owners-test-db"]
@@ -47,5 +47,4 @@
             (add-pet "Martha" "Paul")
             (add-pet "Jet" "Paul")
             (find-pets-for-owner "Paul"))))
-
 
